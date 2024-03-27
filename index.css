@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #212F3C;
+    color: #ECF0F1;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-image: url("black.png");
+}
+
+h1 {
+    
+        
+    color: #F1C40F;
+    font-size: 48px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+        
+    
+    
+
+
+#message-el {
+    font-style: italic;
+    margin-top: 20px;
+    color:black;
+    font-size: 30px;
+    background-color:white;
+}
+
+button {
+    color: #fff;
+    width: 150px;
+    background: #2ECC71;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #27AE60;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cards-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    background-color: #34495E;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-image: url("card\ \(1\).jpg");
+}
+
+.card-text {
+    color:black;
+    font-size: 24px;
+    font-style: oblique;
+}
+
+.chips-info {
+    margin-top: 30px;
+    color:black;
+    background-color:gold;
+}
+#sum-el{
+    font-size: 24px;
+    color: black;
+    background-color: white;
+}
+#cards-el{
+    font-size: 24px;
+    color: black;
+    background-color: white;
+}
