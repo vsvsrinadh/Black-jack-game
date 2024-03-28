@@ -1,12 +1,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ECF0F1;
     background-color: #212F3C;
+    color: #ECF0F1;
     text-align: center;
     font-size: 18px;
     margin: 0;
     padding: 0;
     background-image: url("black.png");
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {

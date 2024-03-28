@@ -2,9 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-        
-
     <title>Black Jack Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.mpl.live/blog/wp-content/uploads/2022/02/Black-Jack.png">
 </head>
 <body>
@@ -19,6 +18,9 @@
         <button id="new-card-btn" onclick="newCard()" disabled>New Card</button>
         <button id="reset-btn" onclick="resetGame()">Reset Game</button>
         <p class="chips-info" id="player-info"></p>
+
+        <!-- Button Click Sound -->
+        <audio id="button-sound" src="click_effect-86995.mp3"></audio>
     </div>
 
     <script>
@@ -41,6 +43,7 @@
             let playerNameInput = document.getElementById("player-name");
             let playerName = playerNameInput.value.trim();
             if (playerName === "") {
+                playButtonSound(); // Play sound when displaying the alert
                 alert("Please enter your name.");
                 return;
             }
@@ -55,6 +58,8 @@
             cards = [firstCard, secondCard];
             sum = firstCard + secondCard;
             renderGame();
+
+            playButtonSound(); // Play button click sound
         }
 
         function getRandomCard() {
@@ -96,6 +101,8 @@
                 sum += card;
                 cards.push(card);
                 renderGame();
+
+                playButtonSound(); // Play button click sound
             }
         }
 
@@ -111,6 +118,13 @@
             isAlive = false;
             message = "";
             renderGame();
+
+            playButtonSound(); // Play button click sound
+        }
+
+        function playButtonSound() {
+            let buttonSound = document.getElementById("button-sound");
+            buttonSound.play();
         }
     </script>
 </body>
